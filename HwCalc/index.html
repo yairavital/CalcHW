@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calcDiv">
+      <h1>Temprtaure convertor</h1>
+      <p>
+        Type a value in the Fahrenhiet field to convert the value to celuses
+      </p>
+      <label for="Fah">Enter Fahrenhiet</label>
+      <input
+        id="Fah"
+        type="number"
+        name="fah"
+        onchange="FahrenheitToC(this.value)"
+        oninput="FahrenheitToC(this.value)"
+      />
+      <br />
+      <p>celuses: <span id="cel"></span></p>
+      <p>Type a value in the c field to convert the value to Fahrenhiet</p>
+      <label for="cel">Enter celuses</label>
+      <input
+        id="cel"
+        type="number"
+        onchange="CToFahrenheit(this.value)"
+        oninput="CToFahrenheit(this.value)"
+      />
+      <br />
+      <p>
+        Fahrenhiet:
+        <span id="Fahrenhiet"></span>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
